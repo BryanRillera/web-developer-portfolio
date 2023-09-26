@@ -1,0 +1,195 @@
+* {
+	padding: 0;
+  	margin: 0;
+  	box-sizing: border-box;
+  	font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gmap_canvas {
+    height: 60vh;
+    width: 100%;
+}
+
+
+#bground{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/storm.jpg);
+    background-position: center;
+    background-size: auto;
+    position: relative;
+}
+
+
+.navbar-brand {
+    font-size: 22px;
+    text-transform: uppercase;
+
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 70px;
+}
+
+.title::after {
+    content: '';
+    background: #00a86b;
+    width: 0;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    transition: 0.8s;   
+}
+
+.title:hover::after {
+    width: 25%;
+}
+
+
+#portfolio-nav{
+    text-align: center;
+}
+#portfolio-nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+#portfolio-nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+#portfolio-nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #00a86b;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+#portfolio-nav ul li:hover::after{
+    width: 80%;
+}
+
+
+#projects .card {
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+
+#projects .card:hover {
+    transform: translateY(-10px);
+}
+
+.card p {
+    font-size: 17px;
+    margin: 12px 0;
+    color: #000F0A;
+    text-align: left;
+}
+
+.card img {
+    margin-top: 20px;
+}
+
+
+#tools {
+    margin: 100px auto;
+    width: 70%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/four.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#tools h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+.card-title {
+    text-align: center;
+}
+
+#gmap_canvas {
+    height: 60vh;
+    width: 100%;
+}
+
+.fab {
+    font-size: 2rem;
+}
+
+
+h1,h2,h3,h4, .nav-link,.card-title {
+    font-family: "poppins",sans-serif;
+}
+
+.fa-arrow-up-from-bracket {
+    font-size: 35px;
+    color: #00a86b;
+    float: right;
+}
+
+#pre-footer {
+    padding: 1rem;
+    color: white;
+    background-color: black;
+}
+
+#pre-footer div {
+    display: inline-block;
+    width: 20%;
+}
+
+
+#pre-footer div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pre-footer a {
+    text-decoration: none;
+    color: skyblue;
+}
+
+.first {
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+}
+
+#footer {
+    padding: 0.5rem;
+}
+
+.footerSpan {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
